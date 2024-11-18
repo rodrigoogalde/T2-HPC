@@ -50,7 +50,7 @@ LIB=$(MTH)
 COMMON=
 
 # Directorios que serán compilados a un programa
-PROGRAMS=Secuencial NonSecuencial
+PROGRAMS=T2
 
 # Todos los directorios que contienen archivos de código
 SRCDIR=$(COMMON) $(PROGRAMS)
