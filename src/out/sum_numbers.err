@@ -1,0 +1,5 @@
+/tmp/slurmd/job13217/slurm_script: line 9: module: command not found
+
+real	8m5.881s
+user	8m5.689s
+sys	0m0.048s
