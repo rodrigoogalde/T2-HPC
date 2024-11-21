@@ -1,0 +1,42 @@
+Inicio del script: Thu Nov 21 12:13:08 -03 2024
+
+real	10m54.055s
+user	10m53.856s
+sys	0m0.124s
+Fue ejecutado con 1 hilos... 
+
+
+real	5m28.363s
+user	10m55.973s
+sys	0m0.604s
+Fue ejecutado con 2 hilos... 
+
+
+real	3m54.860s
+user	11m37.114s
+sys	0m0.932s
+Fue ejecutado con 3 hilos... 
+
+
+real	2m50.504s
+user	11m13.090s
+sys	0m0.772s
+Fue ejecutado con 4 hilos... 
+
+
+real	2m26.472s
+user	11m57.116s
+sys	0m0.860s
+Fue ejecutado con 5 hilos... 
+
+
+real	2m3.533s
+user	12m10.913s
+sys	0m0.893s
+Fue ejecutado con 6 hilos... 
+
+
+real	1m50.661s
+user	12m40.292s
+sys	0m1.034s
+Fue ejecutado con 7 hilos...
