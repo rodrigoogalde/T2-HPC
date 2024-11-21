@@ -17,6 +17,7 @@ scp rjogalde@kraken.ing.puc.cl:~/t2.out ./t2.out
 scp ./src/T2/main.c rjogalde@kraken.ing.puc.cl:~/main.c
 scp run.sh rjogalde@kraken.ing.puc.cl:~/run.sh
 
+squeue
 squeue -u rjogalde
 ```
 
