@@ -8,6 +8,6 @@
 
 module load gcc
 
-gcc -fopenmp -o main main.c
+gcc -fopenmp -O3 -o main main.c
 export OMP_NUM_THREADS=8
-time ./main
+{time ./main} 2> time.txt
