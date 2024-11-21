@@ -15,10 +15,15 @@ module load gcc
 echo "Compilando el programa..."
 gcc -fopenmp -o main main.c
 
-export OMP_NUM_THREADS=8
+for threads in {1..50}
+do
+    export OMP_NUM_THREADS=$threads
 
-echo "Ejecutando el programa..."
-{ time ./main; } 2>> time.txt
+    echo "Ejecutando con $OMP_NUM_THREADS hilos..." >> time.txt
+
+    # Ejecutar el programa y registrar el tiempo
+    { time ./main; } 2>> time.txt
+done
 
 echo "Fin del script"
 date

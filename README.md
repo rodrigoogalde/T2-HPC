@@ -6,6 +6,22 @@ Al ejecutar el secuencial en local se demora ./T2_secuencial  493.65s user 2.92s
 
 Al ejecutar el secuencial en el cluster 
 
+**real**	**9m10.072s**
+
+**user**	**9m10.016s**
+
+**sys**	**0m0.036s**
+
+Al ejecutar el paralelo en local ./main  684.32s user 4.03s system 728% cpu 1:34.55 total
+
+Al ejecutar el paralelo en el cluster 
+
+**real**	**1m54.533s**
+
+**user**	**11m53.723s**
+
+**sys**	**0m0.492s**
+
 ### Connect to the Cluster
 
 ```
