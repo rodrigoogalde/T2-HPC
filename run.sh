@@ -7,7 +7,7 @@
 #SBATCH --time=00:30:00
 #SBATCH --partition=all
 
-echo "start script"
+echo "Inicio del script: $(date)" > time.txt
 date
 
 module load gcc
@@ -19,9 +19,10 @@ for threads in {1..50}
 do
     export OMP_NUM_THREADS=$threads
 
-    echo "Ejecutando con $OMP_NUM_THREADS hilos..." >> time.txt
     { time ./main; } 2>> time.txt
+    echo -n "Fue ejecutado con $OMP_NUM_THREADS hilos... " >> time.txt
+    echo  "" >> time.txt
+    echo  "" >> time.txt
 done
 
-echo "Fin del script"
-date
+echo "Termino del script: $(date)" > time.txt
