@@ -7,7 +7,7 @@ def convert_to_decimal(time_str):
     if match:
         minutes = int(match.group(1))
         seconds = float(match.group(2))
-        return minutes*60 + seconds#/ 60
+        return round(minutes * 60 + seconds, 2)
     else:
         return None
 
@@ -32,15 +32,17 @@ def txt_to_excel(txt_file, excel_file):
                     hilos.append(hilos_count)  
 
                 if line.startswith("real"):
-                    real_time = line.split("\t")[1].strip()  
+                    real_time = line.split("    ")[1].strip()  
                     real_times.append(convert_to_decimal(real_time))
 
                 elif line.startswith("user"):
-                    user_time = line.split("\t")[1].strip() 
+                    #user_time = line.split("\t")[1].strip() 
+                    user_time = line.split("    ")[1].strip() 
                     user_times.append(convert_to_decimal(user_time))  
 
                 elif line.startswith("sys"):
-                    sys_time = line.split("\t")[1].strip()  
+                    #sys_time = line.split("\t")[1].strip()  
+                    sys_time = line.split("    ")[1].strip()  
                     sys_times.append(convert_to_decimal(sys_time)) 
 
         # Crear un DataFrame de pandas con los datos
@@ -78,6 +80,22 @@ def generate_grafics(excel_file, folder):
 
     # Guardar el gráfico como PDF
     plt.savefig(f'{folder}/grafico_tiempos.png', format='png')
+    plt.close()
+
+    # Crear un gráfico de 'Real', 'User' y 'Sys' contra 'Hilos'
+    plt.figure(figsize=(8, 6))
+
+    # Graficar cada columna
+    plt.plot(df['Hilos'], df['Real'], label='Real', marker='o')
+
+    # Añadir títulos y etiquetas
+    plt.title('Tiempo Real de Ejecución por Cantidad de Hilos')
+    plt.xlabel('Número de Hilos')
+    plt.ylabel('Tiempo (segundos)')
+    plt.legend()
+
+    # Guardar el gráfico como PDF
+    plt.savefig(f'{folder}/grafico_tiempo_real.png', format='png')
     plt.close()
 
     # Crear gráfico de Speedup
@@ -124,7 +142,7 @@ def generate_grafics(excel_file, folder):
 def excel_to_latex_table(excel_file, output_file):
     df = pd.read_excel(excel_file)
 
-    latex_table = df.to_latex(index=False, header=True)
+    latex_table = df.to_latex(index=False, header=True, float_format="%.2f")
     latex_table = "\ begin{center}\n" + latex_table + "\n\label{tab:execution_times} \n\end{center}"
 
     with open(output_file, 'w') as f:
