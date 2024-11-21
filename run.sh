@@ -13,7 +13,7 @@ date
 module load gcc
 
 echo "Compilando el programa..."
-gcc -fopenmp -O3 -o main main.c
+gcc -fopenmp -o main main.c
 
 for threads in {1..50}
 do
