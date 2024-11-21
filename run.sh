@@ -20,8 +20,6 @@ do
     export OMP_NUM_THREADS=$threads
 
     echo "Ejecutando con $OMP_NUM_THREADS hilos..." >> time.txt
-
-    # Ejecutar el programa y registrar el tiempo
     { time ./main; } 2>> time.txt
 done
 
