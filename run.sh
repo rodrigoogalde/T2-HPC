@@ -1,13 +1,27 @@
 #!/bin/bash
-#SBATCH --job-name=t2
-#SBATCH --output=t2.out
-#SBATCH --error=t2.err
-#SBATCH --ntasks=1
+#SBATCH --job-name=sum_numbers
+#SBATCH --output=sum_numbers.out
+#SBATCH --error=sum_numbers.err
+#SBATCH --ntasks=8
 #SBATCH --cpus-per-task=8
 #SBATCH --time=00:30:00
+#SBATCH --partition=all
+
+echo "start script"
+date
 
 module load gcc
 
-gcc -fopenmp -O3 -o main main.c
-export OMP_NUM_THREADS=8
-{time ./main} 2> time.txt
+echo "Compilando el programa..."
+gcc -fopenmp -o main main.c
+
+for threads in {1..10}
+do
+    export OMP_NUM_THREADS=$threads
+
+    echo "Ejecutando con $OMP_NUM_THREADS hilos..." >> time.txt
+    { time ./main; } 2>> time.txt
+done
+
+echo "Fin del script"
+date
