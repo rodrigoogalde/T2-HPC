@@ -1,42 +1,276 @@
-Inicio del script: Thu Nov 21 12:13:08 -03 2024
+Inicio del script: Thu Nov 21 12:50:27 PM -03 2024
 
-real	10m54.055s
-user	10m53.856s
-sys	0m0.124s
+real    3m22.723s
+user    3m22.573s
+sys     0m0.129s
 Fue ejecutado con 1 hilos... 
 
 
-real	5m28.363s
-user	10m55.973s
-sys	0m0.604s
+real    1m48.483s
+user    3m35.781s
+sys     0m0.725s
 Fue ejecutado con 2 hilos... 
 
 
-real	3m54.860s
-user	11m37.114s
-sys	0m0.932s
+real    1m15.246s
+user    3m42.618s
+sys     0m0.645s
 Fue ejecutado con 3 hilos... 
 
 
-real	2m50.504s
-user	11m13.090s
-sys	0m0.772s
+real    0m59.541s
+user    3m53.150s
+sys     0m0.636s
 Fue ejecutado con 4 hilos... 
 
 
-real	2m26.472s
-user	11m57.116s
-sys	0m0.860s
+real    0m52.648s
+user    4m15.801s
+sys     0m0.541s
 Fue ejecutado con 5 hilos... 
 
 
-real	2m3.533s
-user	12m10.913s
-sys	0m0.893s
+real    0m45.765s
+user    4m27.273s
+sys     0m0.694s
 Fue ejecutado con 6 hilos... 
 
 
-real	1m50.661s
-user	12m40.292s
-sys	0m1.034s
-Fue ejecutado con 7 hilos...
+real    0m41.068s
+user    4m39.967s
+sys     0m0.545s
+Fue ejecutado con 7 hilos... 
+
+
+real    0m37.152s
+user    4m52.016s
+sys     0m0.808s
+Fue ejecutado con 8 hilos... 
+
+
+real    0m35.498s
+user    5m13.236s
+sys     0m0.498s
+Fue ejecutado con 9 hilos... 
+
+
+real    0m32.412s
+user    5m20.433s
+sys     0m0.625s
+Fue ejecutado con 10 hilos... 
+
+
+real    0m31.586s
+user    5m43.991s
+sys     0m0.681s
+Fue ejecutado con 11 hilos... 
+
+
+real    0m30.605s
+user    6m3.541s
+sys     0m0.780s
+Fue ejecutado con 12 hilos... 
+
+
+real    0m34.017s
+user    7m19.862s
+sys     0m0.820s
+Fue ejecutado con 13 hilos... 
+
+
+real    0m31.020s
+user    7m10.418s
+sys     0m1.140s
+Fue ejecutado con 14 hilos... 
+
+
+real    0m33.948s
+user    8m17.336s
+sys     0m1.033s
+Fue ejecutado con 15 hilos... 
+
+
+real    0m32.635s
+user    8m32.982s
+sys     0m1.041s
+Fue ejecutado con 16 hilos... 
+
+
+real    0m29.532s
+user    8m17.409s
+sys     0m0.884s
+Fue ejecutado con 17 hilos... 
+
+
+real    0m27.807s
+user    8m18.175s
+sys     0m1.021s
+Fue ejecutado con 18 hilos... 
+
+
+real    0m29.601s
+user    9m18.806s
+sys     0m0.749s
+Fue ejecutado con 19 hilos... 
+
+
+real    0m27.790s
+user    9m12.317s
+sys     0m1.136s
+Fue ejecutado con 20 hilos... 
+
+
+real    0m27.632s
+user    9m38.013s
+sys     0m0.740s
+Fue ejecutado con 21 hilos... 
+
+
+real    0m28.085s
+user    10m15.811s
+sys     0m0.873s
+Fue ejecutado con 22 hilos... 
+
+
+real    0m27.924s
+user    10m40.401s
+sys     0m0.773s
+Fue ejecutado con 23 hilos... 
+
+
+real    0m27.385s
+user    10m54.230s
+sys     0m1.513s
+Fue ejecutado con 24 hilos... 
+
+
+real    0m26.897s
+user    11m10.042s
+sys     0m1.120s
+Fue ejecutado con 25 hilos... 
+
+
+real    0m26.850s
+user    11m36.404s
+sys     0m0.856s
+Fue ejecutado con 26 hilos... 
+
+
+real    0m27.347s
+user    12m16.278s
+sys     0m0.924s
+Fue ejecutado con 27 hilos... 
+
+
+real    0m26.109s
+user    12m7.327s
+sys     0m1.016s
+Fue ejecutado con 28 hilos... 
+
+
+real    0m27.085s
+user    13m1.589s
+sys     0m0.916s
+Fue ejecutado con 29 hilos... 
+
+
+real    0m27.627s
+user    13m46.038s
+sys     0m1.076s
+Fue ejecutado con 30 hilos... 
+
+
+real    0m26.611s
+user    13m41.618s
+sys     0m1.177s
+Fue ejecutado con 31 hilos... 
+
+
+real    0m28.088s
+user    14m56.388s
+sys     0m1.044s
+Fue ejecutado con 32 hilos... 
+
+
+real    0m31.709s
+user    12m24.185s
+sys     0m10.542s
+Fue ejecutado con 33 hilos... 
+
+
+real    0m33.468s
+user    12m21.393s
+sys     0m11.440s
+Fue ejecutado con 34 hilos... 
+
+
+real    0m34.076s
+user    12m11.321s
+sys     0m13.233s
+Fue ejecutado con 35 hilos... 
+
+
+real    0m35.025s
+user    12m37.187s
+sys     0m15.162s
+Fue ejecutado con 36 hilos... 
+
+
+real    0m34.514s
+user    12m14.856s
+sys     0m14.909s
+Fue ejecutado con 37 hilos... 
+
+
+real    0m34.617s
+user    12m19.825s
+sys     0m15.970s
+Fue ejecutado con 38 hilos... 
+
+
+real    0m34.211s
+user    12m2.655s
+sys     0m15.869s
+Fue ejecutado con 39 hilos... 
+
+
+real    0m34.055s
+user    11m59.571s
+sys     0m16.696s
+Fue ejecutado con 40 hilos... 
+
+
+real    0m33.802s
+user    11m51.881s
+sys     0m18.943s
+Fue ejecutado con 41 hilos... 
+
+
+real    0m34.036s
+user    11m58.626s
+sys     0m18.990s
+Fue ejecutado con 42 hilos... 
+
+
+real    0m33.738s
+user    11m51.639s
+sys     0m18.817s
+Fue ejecutado con 43 hilos... 
+
+
+real    0m33.124s
+user    11m41.597s
+sys     0m20.231s
+Fue ejecutado con 44 hilos... 
+
+
+real    0m33.854s
+user    11m57.161s
+sys     0m20.858s
+Fue ejecutado con 45 hilos... 
+
+
+real    0m33.948s
+user    11m56.743s
+sys     0m20.532s
+Fue ejecutado con 46 hilos...

@@ -77,14 +77,66 @@ def generate_grafics(excel_file, folder):
     plt.legend()
 
     # Guardar el gráfico como PDF
-    plt.savefig(f'{folder}/grafico_tiempos.pdf', format='pdf')
+    plt.savefig(f'{folder}/grafico_tiempos.png', format='png')
+    plt.close()
 
-    # Mostrar el gráfico
-    plt.show()
+    # Crear gráfico de Speedup
+    plt.figure(figsize=(8, 6))
+
+    # Calcular el speedup
+    df['Speedup'] = df['Real'][0] / df['Real']
+
+    # Graficar el speedup
+    plt.plot(df['Hilos'], df['Speedup'], label='Speedup', marker='o', color='green')
+
+    # Añadir títulos y etiquetas
+    plt.title('Speedup por Cantidad de Hilos')
+    plt.xlabel('Número de Hilos')
+    plt.ylabel('Speedup')
+    plt.legend()
+
+    # Guardar el gráfico como PDF
+    plt.savefig(f'{folder}/grafico_speedup.png', format='png')
+    plt.close()
+
+    # Crear gráfico de Eficiencia
+    plt.figure(figsize=(8, 6))
+
+    # Calcular la eficiencia
+    df['Eficiencia'] = df['Speedup'] / df['Hilos']
+
+    # Graficar la eficiencia
+    plt.plot(df['Hilos'], df['Eficiencia'], label='Eficiencia', marker='o', color='red')
+
+    # Añadir títulos y etiquetas
+    plt.title('Eficiencia por Cantidad de Hilos')
+    plt.xlabel('Número de Hilos')
+    plt.ylabel('Eficiencia')
+    plt.legend()
+
+    # Guardar el gráfico como PDF
+    plt.savefig(f'{folder}/grafico_eficiencia.png', format='png')
+    plt.close()
+
+    # Mostrar los gráficos generados
+    print("Gráficos generados y guardados en PNG.")
+
+def excel_to_latex_table(excel_file, output_file):
+    df = pd.read_excel(excel_file)
+
+    latex_table = df.to_latex(index=False, header=True)
+    latex_table = "\ begin{center}\n" + latex_table + "\n\label{tab:execution_times} \n\end{center}"
+
+    with open(output_file, 'w') as f:
+        f.write(latex_table)
+
+    print(f"Tabla en formato LaTeX guardada en {output_file}")
 
 txt_file = 'data/txt/time.txt'  
 excel_file = 'data/xlsx/resultado.xlsx' 
 folder = 'data/grafics/' 
+latex_txt = 'data/txt/latex.txt'
 
 txt_to_excel(txt_file, excel_file)
 generate_grafics(excel_file, folder)
+excel_to_latex_table(excel_file, latex_txt)

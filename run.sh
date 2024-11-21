@@ -25,4 +25,4 @@ do
     echo  "" >> time.txt
 done
 
-echo "Termino del script: $(date)" > time.txt
+echo "Termino del script: $(date)" >> time.txt
